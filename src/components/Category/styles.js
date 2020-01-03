@@ -12,6 +12,8 @@ export const Image = styled.img`
   box-shadow: 0px 10px 14px rgba(0, 0, 0, .2);
   border-radius: 50%;
   height: auto;
+  width: 75px;
+  height: 75px;
   overflow: hidden;
   object-fit: cover;
 `
