@@ -12,11 +12,19 @@ export const ListOfCategories = () => {
         setCategories(response)
       })
   }, [])
-  return (
-    <List>
+
+  const renderList = (fixed) => (
+    <List className={fixed ? 'fixed' : ''}>
       {
         categories.map(category => <Item key={category.id}><Category {...category} /></Item>)
       }
     </List>
+  )
+
+  return (
+    <>
+      {renderList()}
+      {renderList(true)}
+    </>
   )
 }
