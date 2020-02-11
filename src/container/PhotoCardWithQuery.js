@@ -20,9 +20,10 @@ query getSinglePhoto($id:ID!) {
 export const PhotoCardWithQuery = ({ id }) => (
   <Query query={query} variables={{ id }}>
     {
-      ({ loading, error, data }) => (
-        <PhotoCard {...data.photo} />
-      )
+      ({ loading, error, data }) => {
+        const { photo = {} } = data
+        return <PhotoCard {...photo} />
+      }
     }
   </Query>
 )
