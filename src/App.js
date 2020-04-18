@@ -25,7 +25,7 @@ export const App = () => {
           ({ isAuth }) =>
             isAuth
               ? <Router>
-                <Favs path='/favorites' />
+                <Favs path='/favs' />
                 <User path='/user' />
               </Router>
               : <Router>
