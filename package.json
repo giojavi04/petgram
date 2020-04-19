@@ -37,7 +37,8 @@
         "webpack-cli": "^3.3.10",
         "webpack-dev-server": "^3.10.1",
         "webpack-pwa-manifest": "^4.2.0",
-        "wepack-cli": "0.0.1-security"
+        "wepack-cli": "0.0.1-security",
+        "workbox-webpack-plugin": "^5.1.2"
     },
     "dependencies": {
         "@reach/router": "^1.3.3",
